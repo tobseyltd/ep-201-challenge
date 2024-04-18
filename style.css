@@ -1,0 +1,151 @@
+body {
+    background: #202124;
+    font-size: 14px;
+    color: #e8eaed;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:last-child:hover {
+    text-decoration: none;
+}
+
+span {
+    background: #8ab4f8;
+    color: #202124;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 10px 22px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+span:hover {
+    background: #93baf9;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+logo-container {
+    display: flex;
+    height: 290px;
+    justify-content: center;
+    align-items: end;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form-container {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 20px 30px -10px rgba(60, 166, 237, 0.365);
+    border-radius: 10px;
+    border: 1px solid #303134;
+    padding: 30px;
+}
+
+street-section,
+address-section {
+    display: flex;
+    gap: 30px;
+}
+
+street-section .street {
+    display: block;
+    width: 65%;
+}
+street-section .street-number {
+    display: block;
+    width: 35%;
+}
+
+address-section .city {
+    display: block;
+    width: 65%;
+}
+
+address-section .zip-code {
+    display: block;
+    width: 35%;
+}
+
+label {
+    display: inline-block;
+    margin-top: 20px !important;
+}
+
+input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: gray;
+    border-bottom: 1px solid #303134;
+    padding: 10px 0;
+}
+
+input:focus-visible {
+    background: transparent;
+    border: none;
+    width: 100%;
+}
+
+.form-button {
+    background-color: #303134;
+    border: 1px solid #303134;
+    border-radius: 4px;
+    color: #e8eaed;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    margin: 15px 0;
+    padding: 15px 16px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.form-button:hover {
+    box-shadow: 0 1px 3px rgba(23, 23, 23, 0.24);
+    background-color: #303134;
+    border: 1px solid #5f6368;
+    color: #e8eaed;
+}
+
+form-results {
+    display: none;
+    flex-direction: column;
+    /* gap: 10px; */
+    width: 100%;
+}
+
+form-results p {
+    margin: 5px 0;
+    width: 100%;
+    border-bottom: 1px solid #303134;
+    padding: 10px 0;
+    color: gray;
+}
+
+form-results h2 {
+    margin-bottom: 30px;
+}
+

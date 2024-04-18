@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>EP-201-Challenge</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="./script.js"></script>
+    </head>
+    <body>
+        <main>
+            <form-container>
+                <form action="" id="form">
+                    <label for="text">Name</label>
+                    <input type="text" name="" id="name" placeholder="Name eingeben" />
+
+                    <street-section>
+                        <div class="street">
+                            <label for="text">Straße</label>
+                            <input type="text" name="" id="street" placeholder="Straße eingeben" />
+                        </div>
+
+                        <div class="street-number">
+                            <label for="text">Nr.</label>
+                            <input
+                                type="number"
+                                name=""
+                                id="street-number"
+                                placeholder="Hausnummer "
+                            />
+                        </div>
+                    </street-section>
+
+                    <address-section>
+                        <div class="city">
+                            <label for="text">Stadt</label>
+                            <input type="text" name="" id="city" placeholder="Stadt eingeben" />
+                        </div>
+
+                        <div class="zip-code">
+                            <label for="text">Plz</label>
+                            <input type="number" name="" id="zip-code" placeholder="PLZ eingeben" />
+                        </div>
+                    </address-section>
+
+                    <label for="text">E-Mail</label>
+                    <input type="email" name="" id="email" placeholder="E-Mail Addresse eingeben" />
+                </form>
+                <button class="form-button" id="submit-button">Abschicken</button>
+
+                <form-results id="results">
+                    <h2> Vielen Dank, Bitten überprüfen Sie Ihre Daten. </h2>
+                    Name: <p id="result-name"></p> <br />
+                    Straße: <p id="result-street"></p> <br />
+                    Wohnort: <p id="result-city"></p> <br />
+                    E-Mail Adresse: <p id="result-email"></p> <br />
+                </form-results>
+            </form-container>
+        </main>
+    </body>
+</html>
+
